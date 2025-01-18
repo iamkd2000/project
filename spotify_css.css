@@ -162,6 +162,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0 1rem 0;
+    z-index: 10;
 }
 
 .sticky-nav-icons img {
@@ -229,4 +230,100 @@ a {
     height: 40%;
     border-top: 1px solid white;
     opacity: 0.4;
+}
+
+.music-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.album-title {
+    font-weight: 600;
+
+}
+
+.album-info {
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+
+.player {
+    width: 50%;
+    /* background-color: orange; */
+}
+
+.control {
+    width: 25%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-control-icon {
+    height: 1.2rem;
+    margin-right: 1.65rem;
+    opacity: 1;
+
+
+}
+
+.control-control-icon:hover {
+
+    opacity: 1;
+}
+
+.player-contraol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-icon {
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: .7;
+}
+
+.player-control-icon:hover {
+
+    opacity: 1;
+}
+
+.playback-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
 }
